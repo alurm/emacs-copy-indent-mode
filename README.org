@@ -1,0 +1,27 @@
+* Alurm's copy indent mode
+
+This global minor mode copies indent from the last non-empty line and deletes trailing whitespace from the previous line when newline is typed.
+
+Deleting trailing whitespace is needed to clean up the copied whitespace this mode creates.
+
+Inspired by the [[https://man.cat-v.org/plan_9/1/acme][Acme]] text editor's autoindent mode.
+
+* A usage example
+
+Note: this is just an example, only the last two lines are strictly necessary.
+
+#+begin_src emacs-lisp
+  ;; Otherwise a sequence of N spaces gets turned into a tab.
+  (setopt indent-tabs-mode nil)
+
+  ;; Seems like electric indent mode may be conflicting.
+  (setopt electric-indent-mode 1)
+
+  (load-file "~/.emacs.d/alurm-copy-indent-mode/alurm-copy-indent-mode.el")
+
+  (setopt alurm-copy-indent-mode 1)
+#+end_src
+
+* The license
+
+MIT.
