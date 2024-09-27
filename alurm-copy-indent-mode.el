@@ -19,7 +19,7 @@
                 ;; If the line is full of whitespace, (not "\n") will capture the last whitespace character.
                 ;; It will be readded later.
                 (rx line-start (group (zero-or-more (or "\t" " "))) (not "\n"))
-                ;; Don't limit search (the default).
+                ;; Don't limit the search (the default).
                 ;; If the search fails, return nil instead of erroring out.
                 nil t)
                (let*
