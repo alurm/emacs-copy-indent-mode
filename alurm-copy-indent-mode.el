@@ -20,7 +20,7 @@
                 ;; It will be readded later.
                 (rx line-start (group (zero-or-more (or "\t" " "))) (not "\n"))
                 ;; Don't limit search (the default).
-                ;; If search fails, return nil instead of erroring out.
+                ;; If the search fails, return nil instead of erroring out.
                 nil t)
                (let*
                    ((indentation (match-string 1))
