@@ -15,7 +15,7 @@ Note: this is just an example, only the last two lines are strictly necessary.
   (setopt indent-tabs-mode nil)
 
   ;; Seems like electric indent mode may be conflicting.
-  (setopt electric-indent-mode 1)
+  (setopt electric-indent-mode nil)
 
   (load-file "~/.emacs.d/alurm-copy-indent-mode/alurm-copy-indent-mode.el")
 
